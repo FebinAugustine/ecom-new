@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
 
 const adminSchema = new mongoose.Schema({
     fullname: {
@@ -75,6 +76,29 @@ adminSchema.pre('save', async function (next) {
 // Method to compare passwords
 adminSchema.methods.matchPassword = async function (enteredPassword) {
     return await bcrypt.compare(enteredPassword, this.password);
+};
+
+// Method to generate access token
+adminSchema.methods.generateAccessToken = function () {
+    return jwt.sign(
+        {
+            _id: this._id,
+            email: this.email,
+            fullname: this.fullname,
+            role: this.role
+        },
+        process.env.ACCESS_TOKEN_SECRET,
+        { expiresIn: process.env.ACCESS_TOKEN_EXPIRY }
+    );
+};
+
+// Method to generate refresh token
+adminSchema.methods.generateRefreshToken = function () {
+    return jwt.sign(
+        { _id: this._id },
+        process.env.REFRESH_TOKEN_SECRET,
+        { expiresIn: process.env.REFRESH_TOKEN_EXPIRY }
+    );
 };
 
 const Admin = mongoose.model('Admin', adminSchema);

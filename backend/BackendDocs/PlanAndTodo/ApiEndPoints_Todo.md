@@ -4,62 +4,62 @@ This document outlines the todo list for implementing the API endpoints for the 
 
 ## 1. User Endpoints
 
-- [ ] Implement user registration endpoint.
-- [ ] Implement user login endpoint.
-- [ ] Implement Google OAuth 2.0 for user login.
-- [ ] Implement endpoint to get all users.
-- [ ] Implement endpoint to get user by ID.
-- [ ] Implement endpoint to get user by email.
-- [ ] Implement endpoint to update user by ID.
-- [ ] Implement endpoint to update user avatar.
-- [ ] Implement endpoint to update user password.
-- [ ] Implement user logout endpoint.
-- [ ] Implement refresh token endpoint.
-- [ ] Implement forgot password endpoint.
-- [ ] Implement forgot password verify code and set new password endpoint.
-- [ ] Implement verify email endpoint.
-- [ ] Implement resend verification email endpoint.
-- [ ] Implement endpoint to delete user by ID.
+- [x] Implement user registration endpoint.
+- [x] Implement user login endpoint.
+- [x] Implement Google OAuth 2.0 for user login.
+- [x] Implement endpoint to get all users.
+- [x] Implement endpoint to get user by ID.
+- [x] Implement endpoint to get user by email.
+- [x] Implement endpoint to update user by ID.
+- [x] Implement endpoint to update user avatar.
+- [x] Implement endpoint to update user password.
+- [x] Implement user logout endpoint.
+- [x] Implement refresh token endpoint.
+- [x] Implement forgot password endpoint.
+- [x] Implement forgot password verify code and set new password endpoint.
+- [x] Implement verify email endpoint.
+- [x] Implement resend verification email endpoint.
+- [x] Implement endpoint to delete user by ID.
 
 ## 2. Seller Endpoints
 
-- [ ] Implement seller registration endpoint.
-- [ ] Implement seller login endpoint.
-- [ ] Implement endpoint to get all sellers.
-- [ ] Implement endpoint to get seller by ID.
-- [ ] Implement endpoint to get seller by email.
-- [ ] Implement endpoint to update seller by ID.
-- [ ] Implement endpoint to update seller bank details by ID.
-- [ ] Implement seller logout endpoint.
-- [ ] Implement refresh token endpoint.
-- [ ] Implement forgot password endpoint.
-- [ ] Implement forgot password verify code and set new password endpoint.
-- [ ] Implement verify email endpoint.
-- [ ] Implement resend verification email endpoint.
-- [ ] Implement endpoint to delete seller by ID.
+- [x] Implement seller registration endpoint.
+- [x] Implement seller login endpoint.
+- [x] Implement endpoint to get all sellers.
+- [x] Implement endpoint to get seller by ID.
+- [x] Implement endpoint to get seller by email.
+- [x] Implement endpoint to update seller by ID.
+- [x] Implement endpoint to update seller bank details by ID.
+- [x] Implement seller logout endpoint.
+- [x] Implement refresh token endpoint.
+- [x] Implement forgot password endpoint.
+- [x] Implement forgot password verify code and set new password endpoint.
+- [x] Implement verify email endpoint.
+- [x] Implement resend verification email endpoint.
+- [x] Implement endpoint to delete seller by ID.
 
 ## 3. Admin Endpoints
 
-- [ ] Implement admin registration endpoint.
-- [ ] Implement admin login endpoint.
-- [ ] Implement endpoint to get admin by ID.
-- [ ] Implement endpoint to update admin by ID.
-- [ ] Implement admin logout endpoint.
-- [ ] Implement refresh token endpoint.
-- [ ] Implement forgot password endpoint.
-- [ ] Implement forgot password verify code and set new password endpoint.
-- [ ] Implement endpoint to delete admin by ID.
+- [x] Implement admin registration endpoint.
+- [x] Implement admin login endpoint.
+- [x] Implement endpoint to get admin by ID.
+- [x] Implement endpoint to update admin by ID.
+- [x] Implement admin logout endpoint.
+- [x] Implement refresh token endpoint.
+- [x] Implement forgot password endpoint.
+- [x] Implement forgot password verify code and set new password endpoint.
+- [x] Implement endpoint to delete admin by ID.
 
 ## 4. Product Endpoints
 
-- [ ] Implement endpoint to create a new product.
-- [ ] Implement endpoint to get all products.
-- [ ] Implement endpoint to get product by ID.
-- [ ] Implement endpoint to get products by category.
-- [ ] Implement endpoint to get products by seller.
-- [ ] Implement endpoint to update product by ID.
-- [ ] Implement endpoint to update product images.
-- [ ] Implement endpoint to delete product by ID.
+- [x] Implement endpoint to create a new product.
+- [x] Implement endpoint to get all products.
+- [x] Implement endpoint to get product by ID.
+- [x] Implement endpoint to get products by category.
+- [x] Implement endpoint to get products by seller.
+- [x] Implement endpoint to update product by ID.
+- [x] Implement endpoint to update product images.
+- [x] Implement endpoint to delete product by ID.
 
 ## 5. Order Endpoints
 

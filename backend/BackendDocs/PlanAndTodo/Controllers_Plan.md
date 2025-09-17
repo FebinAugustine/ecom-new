@@ -5,12 +5,12 @@ This document outlines the plan for implementing the controllers for the e-comme
 ## General Approach
 
 - Create separate controller files for each resource (e.g., `userController.js`, `productController.js`, etc.) inside a `controllers` directory.
-- Use `async/await` for all asynchronous operations to handle promises gracefully.
+- Use `utils/asyncHandler.js` for all asynchronous operations to handle promises gracefully.
 - Implement robust error handling within each controller function using `try/catch` blocks.
 - Forward errors to a centralized error handling middleware for consistent error responses.
 - Keep controllers lean by abstracting business logic into a `services` layer.
 - Abstract database interactions into a `repositories` layer, which will be called by the services.
-- Use a validation library (like Joi) in a middleware to validate request bodies, parameters, and queries before they reach the controller.
+- Use a validation library (like Zod) in a middleware to validate request bodies, parameters, and queries before they reach the controller.
 - Send consistent and meaningful JSON responses to the client, including appropriate status codes.
 
 ## Controller Structure

@@ -5,8 +5,9 @@ const storage = multer.diskStorage({
     cb(null, "./public/temp");
   },
   filename: function (req, file, cb) {
-    const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
-    cb(null, file.filename + "-" + uniqueSuffix);
+    // We don't need a unique suffix here as Cloudinary will handle uniqueness.
+    // Using the original name is fine for the temporary local storage.
+    cb(null, file.originalname);
   },
 });
 

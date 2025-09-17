@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
 
 const sellerSchema = new mongoose.Schema({
     fullname: {
@@ -99,6 +100,29 @@ sellerSchema.pre('save', async function (next) {
 // Method to compare passwords
 sellerSchema.methods.matchPassword = async function (enteredPassword) {
     return await bcrypt.compare(enteredPassword, this.password);
+};
+
+// Method to generate access token
+sellerSchema.methods.generateAccessToken = function () {
+    return jwt.sign(
+        {
+            _id: this._id,
+            email: this.email,
+            fullname: this.fullname,
+            role: this.role
+        },
+        process.env.ACCESS_TOKEN_SECRET,
+        { expiresIn: process.env.ACCESS_TOKEN_EXPIRY }
+    );
+};
+
+// Method to generate refresh token
+sellerSchema.methods.generateRefreshToken = function () {
+    return jwt.sign(
+        { _id: this._id },
+        process.env.REFRESH_TOKEN_SECRET,
+        { expiresIn: process.env.REFRESH_TOKEN_EXPIRY }
+    );
 };
 
 const Seller = mongoose.model('Seller', sellerSchema);

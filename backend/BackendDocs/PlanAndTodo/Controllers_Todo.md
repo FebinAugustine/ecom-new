@@ -4,54 +4,54 @@ This document outlines the todo list for implementing the controllers for the e-
 
 ## General
 
-- [ ] Create a `controllers` directory.
+- [x] Create a `controllers` directory.
 - [ ] Create a centralized error handling middleware.
 
 ## 1. User Controller (`userController.js`)
 
-- [ ] `registerUser`
-- [ ] `loginUser`
-- [ ] `getAllUsers`
-- [ ] `getUserById`
-- [ ] `updateUserById`
-- [ ] `updateUserAvatar`
-- [ ] `updateUserPassword`
-- [ ] `logoutUser`
-- [ ] `postRefreshToken`
-- [ ] `forgotPassword`
-- [ ] `forgotPasswordVerifyCode`
-- [ ] `verifyEmail`
-- [ ] `deleteUserById`
+- [x] `registerUser`
+- [x] `loginUser`
+- [x] `getAllUsers`
+- [x] `getUserById`
+- [x] `updateUserById`
+- [x] `updateUserAvatar`
+- [x] `updateUserPassword`
+- [x] `logoutUser`
+- [x] `postRefreshToken`
+- [x] `forgotPassword`
+- [x] `forgotPasswordVerifyCode`
+- [x] `verifyEmail`
+- [x] `deleteUserById`
 
 ## 2. Seller Controller (`sellerController.js`)
 
-- [ ] `registerSeller`
-- [ ] `loginSeller`
-- [ ] `getAllSellers`
-- [ ] `getSellerById`
-- [ ] `updateSellerById`
-- [ ] `updateSellerBankDetails`
-- [ ] `updateSellerAvatar`
-- [ ] `updateSellerPassword`
-- [ ] `logoutSeller`
-- [ ] `refreshToken`
-- [ ] `forgotPassword`
-- [ ] `forgotPasswordVerifyCode`
-- [ ] `verifyEmail`
-- [ ] `deleteSellerById`
+- [x] `registerSeller`
+- [x] `loginSeller`
+- [x] `getAllSellers`
+- [x] `getSellerById`
+- [x] `updateSellerById`
+- [x] `updateSellerBankDetails`
+- [x] `updateSellerAvatar`
+- [x] `updateSellerPassword`
+- [x] `logoutSeller`
+- [x] `refreshToken`
+- [x] `forgotPassword`
+- [x] `forgotPasswordVerifyCode`
+- [x] `verifyEmail`
+- [x] `deleteSellerById`
 
 ## 3. Admin Controller (`adminController.js`)
 
-- [ ] `registerAdmin`
-- [ ] `loginAdmin`
-- [ ] `getAdminById`
-- [ ] `updateAdminById`
-- [ ] `logoutAdmin`
-- [ ] `refreshToken`
-- [ ] `updateAdminPassword`
-- [ ] `forgotPassword`
-- [ ] `forgotPasswordVerifyCode`
-- [ ] `deleteAdminById`
+- [x] `registerAdmin`
+- [x] `loginAdmin`
+- [x] `getAdminById`
+- [x] `updateAdminById`
+- [x] `logoutAdmin`
+- [x] `refreshToken`
+- [x] `updateAdminPassword`
+- [x] `forgotPassword`
+- [x] `forgotPasswordVerifyCode`
+- [x] `deleteAdminById`
 
 ## 4. Category Controller (`categoryController.js`)
 
@@ -63,13 +63,13 @@ This document outlines the todo list for implementing the controllers for the e-
 
 ## 5. Product Controller (`productController.js`)
 
-- [ ] `createProduct`
-- [ ] `getAllProducts`
-- [ ] `getProductById`
-- [ ] `getProductsByCategory`
-- [ ] `updateProductById`
-- [ ] `updateProductImage`
-- [ ] `deleteProductById`
+- [x] `createProduct`
+- [x] `getAllProducts`
+- [x] `getProductById`
+- [x] `getProductsByCategory`
+- [x] `updateProductById`
+- [x] `updateProductImage`
+- [x] `deleteProductById`
 
 ## 6. Order Controller (`orderController.js`)
 
