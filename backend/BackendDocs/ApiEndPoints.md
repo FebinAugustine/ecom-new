@@ -5,13 +5,15 @@
 - baseUrl = http://localhost:3000
 - Extension - /api/v1
 
-## User Endpoints:
+## 1. User Endpoints:
 
 ### **CREATE**
 
+- base endpoint: /users
+
 - Register:
   - Method: POST
-  - URL: /users/register
+  - URL: /register
   - Body: {
     "fullname": "John Doe",
     "email": "t0t6j@example.com",
@@ -20,7 +22,7 @@
     }
 - Login:
   - Method: POST
-  - URL: /users/login
+  - URL: /login
   - Body: {
     "email": "t0t6j@example.com",
     "password": "password123"
@@ -37,19 +39,19 @@
 
 - Get all users:
   - Method: GET
-  - URL: /users
+  - URL: /all-users
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 - Get user by id:
   - Method: GET
-  - URL: /users/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 - Get user by email:
   - Method: GET
-  - URL: /users/email/:email
+  - URL: /email/:email
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -58,7 +60,7 @@
 
 - **Update user by id:**
   - Method: PUT
-  - URL: /users/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -72,7 +74,7 @@
     }
 - **Update User Avatar:**
   - Method: PUT
-  - URL: /users/update-avatar
+  - URL: /update-avatar
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -81,7 +83,7 @@
     }
 - **Update User Password:**
   - Method: PUT
-  - URL: /users/update-password
+  - URL: /update-password
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -97,13 +99,13 @@
     }
 - **Post Refresh Token:**
   - Method: POST
-  - URL: /users/refresh-token
+  - URL: /refresh-token
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 - **Post Forgot Password:**
   - Method: POST
-  - URL: /users/forgot-password
+  - URL: /forgot-password
   - Body: {
     "email": "t0t6j@example.com"
     }
@@ -117,7 +119,7 @@
     }
 - **Post Verify Email:**
   - Method: POST
-  - URL: /users/verify-email
+  - URL: /verify-email
   - Body: {
     "email": "t0t6j@example.com"
     }
@@ -132,20 +134,22 @@
 
 - **Delete user by id:**
   - Method: DELETE
-  - URL: /users/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 
 ---
 
-## **SELLER ENDPOINTS:**
+## **2. SELLER ENDPOINTS:**
+
+- base endpoint: /sellers
 
 ### **CREATE**
 
 - **Register:**
   - Method: POST
-  - URL: /sellers/register
+  - URL: /register
   - Body: {
     "fullname": "John Doe",
     "email": "t0t6j@example.com",
@@ -157,7 +161,7 @@
     }
 - **Login:**
   - Method: POST
-  - URL: /sellers/login
+  - URL: /login
   - Body: {
     "email": "t0t6j@example.com",
     "password": "password123"
@@ -167,13 +171,13 @@
 
 - **Get all sellers:**
   - Method: GET
-  - URL: /sellers
+  - URL: /all-sellers
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 - **Get seller by id:**
   - Method: GET
-  - URL: /sellers/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -188,7 +192,7 @@
 
 - **Update seller by id:**
   - Method: PUT
-  - URL: /sellers/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -205,7 +209,7 @@
     }
 - **Update seller Bank Details by id:**
   - Method: PUT
-  - URL: /sellers/bank/:id
+  - URL: /bank/:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -216,25 +220,25 @@
     }
 - **Logout:**
   - Method: POST
-  - URL: /sellers/logout
+  - URL: /logout
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 - **Post Refresh Token:**
   - Method: POST
-  - URL: /sellers/refresh-token
+  - URL: /refresh-token
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 - **Forgot Password:**
   - Method: POST
-  - URL: /sellers/forgot-password
+  - URL: /forgot-password
   - Body: {
     "email": "t0t6j@example.com"
     }
 - **Forgot password verify code and set new password:**
   - Method: POST
-  - URL: /sellers/forgot-password-verify-code
+  - URL: /forgot-password-verify-code
   - Body: {
     "email": "t0t6j@example.com",
     "code": "123456",
@@ -242,13 +246,13 @@
     }
 - **Verify Email:**
   - Method: POST
-  - URL: /sellers/verify-email
+  - URL: /verify-email
   - Body: {
     "email": "t0t6j@example.com"
     }
 - **Resend Verification Email:**
   - Method: POST
-  - URL: /sellers/resend-verification-email
+  - URL: /resend-verification-email
   - Body: {
     "email": "t0t6j@example.com"
     }
@@ -257,20 +261,22 @@
 
 - Delete seller by id:
   - Method: DELETE
-  - URL: /sellers/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 
 ---
 
-## **ADMIN ENDPOINTS:**
+## **3. ADMIN ENDPOINTS:**
+
+- base endpoint: /admins
 
 ### **CREATE**
 
 - **Register:**
   - Method: POST
-  - URL: /admins/register
+  - URL: /register
   - Body: {
     "fullname": "John Doe",
     "email": "t0t6j@example.com",
@@ -279,7 +285,7 @@
     }
 - **Login:**
   - Method: POST
-  - URL: /admins/login
+  - URL: /login
   - Body: {
     "email": "t0t6j@example.com",
     "password": "password123"
@@ -289,7 +295,7 @@
 
 - **Get admin by id:**
   - Method: GET
-  - URL: /admins/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -298,7 +304,7 @@
 
 - **Update admin by id:**
   - Method: PUT
-  - URL: /admins/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -310,19 +316,19 @@
     }
 - **Logout:**
   - Method: POST
-  - URL: /admins/logout
+  - URL: /logout
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 - **Post Refresh Token:**
   - Method: POST
-  - URL: /admins/refresh-token
+  - URL: /refresh-token
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 - **Forgot Password:**
   - Method: POST
-  - URL: /admins/forgot-password
+  - URL: /forgot-password
   - Body: {
     "email": "t0t6j@example.com"
     }
@@ -339,14 +345,16 @@
 
 - **Delete admin by id:**
   - Method: DELETE
-  - URL: /admins/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 
 ---
 
-## **PRODUCT ENDPOINTS:**
+## **4. PRODUCT ENDPOINTS:**
+
+- base endpoint: /products
 
 ### **CREATE**
 
@@ -373,7 +381,7 @@
 
 - **Get all products:**
   - Method: GET
-  - URL: /products
+  - URL: /
 - **Get product by id:**
   - Method: GET
   - URL: /products/:id
@@ -406,7 +414,7 @@
     }
 - **Update Product Images:**
   - Method: PUT
-  - URL: /products/update-image/:id
+  - URL: /update-images/:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -418,20 +426,22 @@
 
 - **Delete product by id:**
   - Method: DELETE
-  - URL: /products/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 
 ---
 
-## **Order Endpoints:**
+## **5. Order Endpoints:**
+
+- base endpoint: /orders
 
 ### **CREATE**
 
 - **Create order:**
   - Method: POST
-  - URL: /orders
+  - URL: /
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -450,13 +460,13 @@
 
 - **Get all orders:**
   - Method: GET
-  - URL: /orders
+  - URL: /
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 - **Get order by id:**
   - Method: GET
-  - URL: /orders/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -465,7 +475,7 @@
 
 - **Update order by id:**
   - Method: PUT
-  - URL: /orders/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -484,16 +494,20 @@
 
 - **Delete order by id:**
   - Method: DELETE
-  - URL: /orders/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 
-## Review Endpoints:
+## **6. Review Endpoints:**
+
+- base endpoint: /reviews
+
+### **CREATE**
 
 - Create review:
   - Method: POST
-  - URL: /reviews
+  - URL: /
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -503,15 +517,21 @@
     "rating": 5,
     "review": "review",
     }
+
+### **READ**
+
 - Get all reviews:
   - Method: GET
-  - URL: /reviews
+  - URL: /
 - Get review by id:
   - Method: GET
   - URL: /reviews/:id
+
+### **UPDATE**
+
 - Update review by id:
   - Method: PUT
-  - URL: /reviews/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -521,18 +541,25 @@
     "rating": 5,
     "review": "review",
     }
+
+### **DELETE**
+
 - Delete review by id:
   - Method: DELETE
-  - URL: /reviews/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 
-## Cart Endpoints:
+## **7. Cart Endpoints:**
+
+- base endpoint: /carts
+
+### **CREATE**
 
 - Add to cart:
   - Method: POST
-  - URL: /carts
+  - URL: /
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -541,21 +568,27 @@
     "product_id": "product_id",
     "quantity": 1,
     }
+
+### **READ**
+
 - Get all carts:
   - Method: GET
-  - URL: /carts
+  - URL: /
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 - Get cart by id:
   - Method: GET
-  - URL: /carts/:id
+  - URL: /:id
   - Headers: {
     "Authorization ": "Bearer <token>"
     }
+
+### **UPDATE**
+
 - Update cart by id:
   - Method: PUT
-  - URL: /carts/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -564,6 +597,9 @@
     "product_id": "product_id",
     "quantity": 1,
     }
+
+### **DELETE**
+
 - Delete cart by id:
   - Method: DELETE
   - URL: /carts/:id
@@ -571,11 +607,15 @@
     "Authorization": "Bearer <token>"
     }
 
-## Wishlist Endpoints:
+## **8.Wishlist Endpoints:**
+
+- base endpoint: /wishlists
+
+### **CREATE**
 
 - Add to wishlist:
   - Method: POST
-  - URL: /wishlists
+  - URL: /
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -583,21 +623,27 @@
     "user_id": "user_id",
     "product_id": "product_id",
     }
+
+### **READ**
+
 - Get all wishlists:
   - Method: GET
-  - URL: /wishlists
+  - URL: /
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 - Get wishlist by id:
   - Method: GET
-  - URL: /wishlists/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
+
+### **UPDATE**
+
 - Update wishlist by id:
   - Method: PUT
-  - URL: /wishlists/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -605,18 +651,25 @@
     "user_id": "user_id",
     "product_id": "product_id",
     }
+
+### **DELETE**
+
 - Delete wishlist by id:
   - Method: DELETE
-  - URL: /wishlists/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 
-## Category Endpoints:
+## **9. Category Endpoints:**
+
+- base endpoint: /categories
+
+### **CREATE**
 
 - Create category:
   - Method: POST
-  - URL: /categories
+  - URL: /
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -624,15 +677,23 @@
     "name": "category",
     "image": "image",
     }
+
+### **READ**
+
 - Get all categories:
+
   - Method: GET
-  - URL: /categories
+  - URL: /
+
 - Get category by id:
   - Method: GET
-  - URL: /categories/:id
+  - URL: /:id
+
+### **UPDATE**
+
 - Update category by id:
   - Method: PUT
-  - URL: /categories/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -640,18 +701,73 @@
     "name": "category",
     "image": "image",
     }
+
+### **DELETE**
+
 - Delete category by id:
   - Method: DELETE
-  - URL: /categories/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 
-## Invoice Endpoints:
+## **10. Likes Endpoints:**
+
+- base endpoint: /likes
+
+### **CREATE**
+
+- Create like:
+  - Method: POST
+  - URL: /
+  - Headers: {
+    "Authorization": "Bearer <token>"
+    }
+  - Body: {
+    "user_id": "user_id",
+    "product_id": "product_id",
+    }
+
+### **READ**
+
+- Get all likes:
+  - Method: GET
+  - URL: /
+- Get like by id:
+  - Method: GET
+  - URL: /:id
+
+### **UPDATE**
+
+- Update like by id:
+  - Method: PUT
+  - URL: /:id
+  - Headers: {
+    "Authorization": "Bearer <token>"
+    }
+  - Body: {
+    "user_id": "user_id",
+    "product_id": "product_id",
+    }
+
+### **DELETE**
+
+- Delete like by id:
+  - Method: DELETE
+  - URL: /:id
+  - Headers: {
+    "Authorization": "Bearer <token>"
+    }
+
+## **11. Invoice Endpoints:**
+
+- base endpoint: /invoices
+
+### **CREATE**
 
 - Create invoice:
   - Method: POST
-  - URL: /invoices
+  - URL: /
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -665,21 +781,27 @@
     "payment_status": "payment_status",
     "status": "status",
     }
+
+### **READ**
+
 - Get all invoices:
   - Method: GET
-  - URL: /invoices
+  - URL: /
   - Headers: {
     "Authorization": "Bearer <token>"
     }
 - Get invoice by id:
   - Method: GET
-  - URL: /invoices/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
+
+### **UPDATE**
+
 - Update invoice by id:
   - Method: PUT
-  - URL: /invoices/:id
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }
@@ -693,9 +815,68 @@
     "payment_status": "payment_status",
     "status": "status",
     }
+
+### **DELETE**
+
 - Delete invoice by id:
   - Method: DELETE
-  - URL: /invoices/:id
+  - URL: /:id
+  - Headers: {
+    "Authorization": "Bearer <token>"
+    }
+
+## **12. Reply Endpoints:**
+
+- base endpoint: /replies
+
+### **CREATE**
+
+- Create reply:
+  - Method: POST
+  - URL: /
+  - Headers: {
+    "Authorization": "Bearer <token>"
+    }
+  - Body: {
+    "user_id": "user_id",
+    "comment_id": "comment_id",
+    "reply": "reply",
+    }
+
+### **READ**
+
+- Get all replies:
+  - Method: GET
+  - URL: /
+  - Headers: {
+    "Authorization": "Bearer <token>"
+    }
+- Get reply by id:
+  - Method: GET
+  - URL: /:id
+  - Headers: {
+    "Authorization": "Bearer <token>"
+    }
+
+### **UPDATE**
+
+- Update reply by id:
+  - Method: PUT
+  - URL: /:id
+  - Headers: {
+    "Authorization": "Bearer <token>"
+    }
+  - Body: {
+    "user_id": "user_id",
+    "comment_id": "comment_id",
+    "reply": "reply",
+    }
+
+### **DELETE**
+
+- Delete reply by id:
+  - Method: DELETE
+  - URL: /:id
   - Headers: {
     "Authorization": "Bearer <token>"
     }

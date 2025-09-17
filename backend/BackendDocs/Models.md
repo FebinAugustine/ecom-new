@@ -4,7 +4,7 @@
 
 ### ODM - Mongoose
 
-## User:
+## **1. User:**
 
 - fullname (String,required)
 - email (String, required, unique)
@@ -25,7 +25,7 @@
 - frgt_pwd_reset_code (String)
 - frgt_pwd_reset_code_expiry (Date)
 
-## Seller:
+## **2. Seller:**
 
 - fullname (String,required)
 - email (String, required, unique)
@@ -50,7 +50,7 @@
 - frgt_pwd_reset_code_expiry (Date)
 - refresh_token (String)
 
-## Admin:
+## **3. Admin:**
 
 - fullname (String, required)
 - email (String, required, unique)
@@ -67,7 +67,13 @@
 - frgt_pwd_reset_code_expiry (Date)
 - refresh_token (String)
 
-## Product:
+## **4. Category:**
+
+- name (String)
+- image (String)
+- products (array[type: mongoose.Schema.Types.ObjectId, ref: 'Product'])
+
+## **5. Product:**
 
 - name (String, required)
 - description (String, required)
@@ -82,14 +88,14 @@
 - rating (Array[type: mongoose.Schema.Types.ObjectId, ref: 'Rating'], default: [])
 - review (Array[type: mongoose.Schema.Types.ObjectId, ref: 'Review'], default: [])
 
-## Cart:
+## **6. Cart:**
 
 - user_id (String, array[type: mongoose.Schema.Types.ObjectId, ref: 'User'])
 - products (Array[type: mongoose.Schema.Types.ObjectId, ref: 'Product'])
 - products (String)
 - date (Date)
 
-## Order:
+## **7. Order:**
 
 - user_id (type: mongoose.Schema.Types.ObjectId, ref: 'User')
 - seller_id (array[type: mongoose.Schema.Types.ObjectId, ref: 'Seller'])
@@ -101,31 +107,26 @@
 - status (String)
 - date (Date)
 
-## Reviews:
+## **8. Reviews:**
 
 - user_id (type: mongoose.Schema.Types.ObjectId, ref: 'User')
 - product_id (type: mongoose.Schema.Types.ObjectId, ref: 'Product')
 - rating (Number)
 - review (String)
+- date (Date)
+- reply (String[type: mongoose.Schema.Types.ObjectId, ref: 'Reply'], default: [])
 
-## Liked:
-
-- user_id (type: mongoose.Schema.Types.ObjectId, ref: 'User')
-- product_id (type: mongoose.Schema.Types.ObjectId, ref: 'Product')
-- is_liked (Boolean)
-
-## Wishlist:
+## **9. Wishlist:**
 
 - user_id (type: mongoose.Schema.Types.ObjectId, ref: 'User')
 - product_id (array[type: mongoose.Schema.Types.ObjectId, ref: 'Product'])
 
-## Category:
+## **10. Liked:**
 
-- name (String)
-- image (String)
-- products (array[type: mongoose.Schema.Types.ObjectId, ref: 'Product'])
+- user_id (type: mongoose.Schema.Types.ObjectId, ref: 'User')
+- product_id (array[type: mongoose.Schema.Types.ObjectId, ref: 'Product'])
 
-## Invoice:
+## **11. Invoice:**
 
 - order_id (type: mongoose.Schema.Types.ObjectId, ref: 'Order')
 - user_id (type: mongoose.Schema.Types.ObjectId, ref: 'User')
@@ -136,3 +137,9 @@
 - payment_method (String)
 - payment_status (String)
 - status (String)
+
+## **12. Reply:**
+
+- user_id (type: mongoose.Schema.Types.ObjectId, ref: 'User')
+- comment_id (type: mongoose.Schema.Types.ObjectId, ref: 'Comment')
+- reply (String)
