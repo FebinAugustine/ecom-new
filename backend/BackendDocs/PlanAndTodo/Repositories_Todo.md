@@ -32,12 +32,12 @@ This document outlines the todo list for creating the repositories for the e-com
     - [x] `deleteAdminById`
     - [x] `getAdminByEmail`
 
-- [ ] **Category Repository (`categoryRepository.js`):
-    - [ ] `createCategory`
-    - [ ] `getCategoryById`
-    - [ ] `getAllCategories`
-    - [ ] `updateCategoryById`
-    - [ ] `deleteCategoryById`
+- [x] **Category Repository (`categoryRepository.js`):
+    - [x] `createCategory`
+    - [x] `getCategoryById`
+    - [x] `getAllCategories`
+    - [x] `updateCategoryById`
+    - [x] `deleteCategoryById`
 
 - [x] **Product Repository (`productRepository.js`):
     - [x] `createProduct`
@@ -48,51 +48,51 @@ This document outlines the todo list for creating the repositories for the e-com
     - [x] `deleteProductById`
     - [x] `getProductsBySeller`
 
-- [ ] **Order Repository (`orderRepository.js`):
-    - [ ] `createOrder`
-    - [ ] `getOrderById`
-    - [ ] `getAllOrders`
-    - [ ] `updateOrderById`
-    - [ ] `deleteOrderById`
+- [x] **Order Repository (`orderRepository.js`):
+    - [x] `createOrder`
+    - [x] `getOrderById`
+    - [x] `getAllOrders`
+    - [x] `updateOrderById`
+    - [x] `deleteOrderById`
 
-- [ ] **Invoice Repository (`invoiceRepository.js`):
-    - [ ] `createInvoice`
-    - [ ] `getInvoiceById`
-    - [ ] `getAllInvoices`
-    - [ ] `updateInvoiceById`
-    - [ ] `deleteInvoiceById`
+- [x] **Invoice Repository (`invoiceRepository.js`):
+    - [x] `createInvoice`
+    - [x] `getInvoiceById`
+    - [x] `getAllInvoices`
+    - [x] `updateInvoiceById`
+    - [x] `deleteInvoiceById`
 
-- [ ] **Review Repository (`reviewRepository.js`):
-    - [ ] `createReview`
-    - [ ] `getReviewById`
-    - [ ] `getAllReviews`
-    - [ ] `updateReviewById`
-    - [ ] `deleteReviewById`
+- [x] **Review Repository (`reviewRepository.js`):
+    - [x] `createReview`
+    - [x] `getReviewById`
+    - [x] `getAllReviews`
+    - [x] `updateReviewById`
+    - [x] `deleteReviewById`
 
-- [ ] **Reply Repository (`replyRepository.js`):
-    - [ ] `createReply`
-    - [ ] `getReplyById`
-    - [ ] `getAllReplies`
-    - [ ] `updateReplyById`
-    - [ ] `deleteReplyById`
+- [x] **Reply Repository (`replyRepository.js`):
+    - [x] `createReply`
+    - [x] `getReplyById`
+    - [x] `getAllReplies`
+    - [x] `updateReplyById`
+    - [x] `deleteReplyById`
 
-- [ ] **Wishlist Repository (`wishlistRepository.js`):
-    - [ ] `createWishlist`
-    - [ ] `getWishlistById`
-    - [ ] `getAllWishlists`
-    - [ ] `updateWishlistById`
-    - [ ] `deleteWishlistById`
+- [x] **Wishlist Repository (`wishlistRepository.js`):
+    - [x] `createWishlist`
+    - [x] `getWishlistById`
+    - [x] `getAllWishlists`
+    - [x] `updateWishlistById`
+    - [x] `deleteWishlistById`
 
-- [ ] **Like Repository (`likeRepository.js`):
-    - [ ] `createLike`
-    - [ ] `getLikeById`
-    - [ ] `getAllLikes`
-    - [ ] `updateLikeById`
-    - [ ] `deleteLikeById`
+- [x] **Like Repository (`likeRepository.js`):
+    - [x] `createLike`
+    - [x] `getLikeById`
+    - [x] `getAllLikes`
+    - [x] `updateLikeById`
+    - [x] `deleteLikeById`
 
-- [ ] **Cart Repository (`cartRepository.js`):
-    - [ ] `createCart`
-    - [ ] `getCartById`
-    - [ ] `getAllCarts`
-    - [ ] `updateCartById`
-    - [ ] `deleteCartById`
+- [x] **Cart Repository (`cartRepository.js`):
+    - [x] `createCart`
+    - [x] `getCartById`
+    - [x] `getAllCarts`
+    - [x] `updateCartById`
+    - [x] `deleteCartById`

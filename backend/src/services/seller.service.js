@@ -1,6 +1,6 @@
 import * as sellerRepository from '../repositories/seller.repository.js';
 import ApiError from '../utils/ApiErrors.js';
-import { redisClient } from '../config/redis.js';
+import redisClient from '../config/redis.js';
 import { uploadOnCloudinary, deleteImageFromCloudinary } from '../utils/cloudinary.fileuplaod.js';
 import sendEmail from '../utils/mail.js';
 

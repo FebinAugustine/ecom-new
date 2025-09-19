@@ -55,11 +55,11 @@ This document outlines the todo list for implementing the controllers for the e-
 
 ## 4. Category Controller (`categoryController.js`)
 
-- [ ] `createCategory`
-- [ ] `getAllCategories`
-- [ ] `getCategoryById`
-- [ ] `updateCategoryById`
-- [ ] `deleteCategoryById`
+- [x] `createCategory`
+- [x] `getAllCategories`
+- [x] `getCategoryById`
+- [x] `updateCategoryById`
+- [x] `deleteCategoryById`
 
 ## 5. Product Controller (`productController.js`)
 
@@ -73,58 +73,58 @@ This document outlines the todo list for implementing the controllers for the e-
 
 ## 6. Order Controller (`orderController.js`)
 
-- [ ] `createOrder`
-- [ ] `getAllOrders`
-- [ ] `getOrderById`
-- [ ] `getOrdersBySellerId`
-- [ ] `updateOrderById`
-- [ ] `updateOrderStatus`
-- [ ] `deleteOrderById`
+- [x] `createOrder`
+- [x] `getAllOrders`
+- [x] `getOrderById`
+- [x] `getOrdersBySellerId`
+- [x] `updateOrderById`
+- [x] `updateOrderStatus`
+- [x] `deleteOrderById`
 
 ## 7. Review Controller (`reviewController.js`)
 
-- [ ] `createReview`
-- [ ] `getAllReviews`
-- [ ] `getReviewById`
-- [ ] `updateReviewById`
-- [ ] `deleteReviewById`
+- [x] `createReview`
+- [x] `getAllReviews`
+- [x] `getReviewById`
+- [x] `updateReviewById`
+- [x] `deleteReviewById`
 
 ## 8. Cart Controller (`cartController.js`)
 
-- [ ] `addToCart`
-- [ ] `getAllCarts`
-- [ ] `getCartById`
-- [ ] `updateCartById`
-- [ ] `deleteCartById`
+- [x] `addToCart`
+- [x] `getAllCarts`
+- [x] `getCartById`
+- [x] `updateCartById`
+- [x] `deleteCartById`
 
 ## 9. Wishlist Controller (`wishlistController.js`)
 
-- [ ] `addToWishlist`
-- [ ] `getAllWishlists`
-- [ ] `getWishlistById`
-- [ ] `updateWishlistById`
-- [ ] `deleteWishlistById`
+- [x] `addToWishlist`
+- [x] `getAllWishlists`
+- [x] `getWishlistById`
+- [x] `updateWishlistById`
+- [x] `deleteWishlistById`
 
 ## 10. Like Controller (`likeController.js`)
 
-- [ ] `addToLike`
-- [ ] `getAllLikes`
-- [ ] `getLikeById`
-- [ ] `updateLikeById`
-- [ ] `deleteLikeById`
+- [x] `addToLike`
+- [x] `getAllLikes`
+- [x] `getLikeById`
+- [x] `updateLikeById`
+- [x] `deleteLikeById`
 
 ## 11. Invoice Controller (`invoiceController.js`)
 
-- [ ] `createInvoice`
-- [ ] `getAllInvoices`
-- [ ] `getInvoiceById`
-- [ ] `updateInvoiceById`
-- [ ] `deleteInvoiceById`
+- [x] `createInvoice`
+- [x] `getAllInvoices`
+- [x] `getInvoiceById`
+- [x] `updateInvoiceById`
+- [x] `deleteInvoiceById`
 
 ## 12. Reply Controller (`replyController.js`)
 
-- [ ] `createReply`
-- [ ] `getAllReplies`
-- [ ] `getReplyByReviewId`
-- [ ] `updateReplyByReviewId`
-- [ ] `deleteReplyById`
+- [x] `createReply`
+- [x] `getAllReplies`
+- [x] `getReplyByReviewId`
+- [x] `updateReplyByReviewId`
+- [x] `deleteReplyById`

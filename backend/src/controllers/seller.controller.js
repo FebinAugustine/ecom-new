@@ -1,5 +1,5 @@
-import { asyncHandler } from '../utils/asyncHandler.js';
-import { ApiResponse } from '../utils/ApiResponse.js';
+import asyncHandler from '../utils/asyncHandler.js';
+import ApiResponse from '../utils/ApiResponse.js';
 import * as sellerService from '../services/seller.service.js';
 
 const registerSeller = asyncHandler(async (req, res) => {

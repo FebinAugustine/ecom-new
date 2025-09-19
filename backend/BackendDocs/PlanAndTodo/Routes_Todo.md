@@ -22,42 +22,42 @@ This document outlines the todo list for implementing the API routes for the e-c
     - [x] Define all public and protected routes for admins.
     - [x] Apply authentication and authorization middleware.
 
-- [ ] **Category Routes (`categoryRoutes.js`):
-    - [ ] Define all public and protected routes for categories.
-    - [ ] Apply middleware for protected routes.
+- [x] **Category Routes (`categoryRoutes.js`):
+    - [x] Define all public and protected routes for categories.
+    - [x] Apply middleware for protected routes.
 
 - [x] **Product Routes (`productRoutes.js`):
     - [x] Define all public and protected routes for products.
     - [x] Apply middleware for protected routes.
     - [x] Integrate the `multer` upload middleware for image uploads.
 
-- [ ] **Order Routes (`orderRoutes.js`):
-    - [ ] Define all protected routes for orders.
-    - [ ] Apply authentication middleware.
+- [x] **Order Routes (`orderRoutes.js`):
+    - [x] Define all protected routes for orders.
+    - [x] Apply authentication middleware.
 
-- [ ] **Invoice Routes (`invoiceRoutes.js`):
-    - [ ] Define all protected routes for invoices.
-    - [ ] Apply authentication middleware.
+- [x] **Invoice Routes (`invoiceRoutes.js`):
+    - [x] Define all protected routes for invoices.
+    - [x] Apply authentication middleware.
 
-- [ ] **Review Routes (`reviewRoutes.js`):
-    - [ ] Define all public and protected routes for reviews.
-    - [ ] Apply middleware for protected routes.
+- [x] **Review Routes (`reviewRoutes.js`):
+    - [x] Define all public and protected routes for reviews.
+    - [x] Apply middleware for protected routes.
 
-- [ ] **Cart Routes (`cartRoutes.js`):
-    - [ ] Define all protected routes for carts.
-    - [ ] Apply authentication middleware.
+- [x] **Cart Routes (`cartRoutes.js`):
+    - [x] Define all protected routes for carts.
+    - [x] Apply authentication middleware.
 
-- [ ] **Wishlist Routes (`wishlistRoutes.js`):
-    - [ ] Define all protected routes for wishlists.
-    - [ ] Apply authentication middleware.
+- [x] **Wishlist Routes (`wishlistRoutes.js`):
+    - [x] Define all protected routes for wishlists.
+    - [x] Apply authentication middleware.
 
-- [ ] **Like Routes (`likeRoutes.js`):
-    - [ ] Define all protected routes for likes.
-    - [ ] Apply authentication middleware.
+- [x] **Like Routes (`likeRoutes.js`):
+    - [x] Define all protected routes for likes.
+    - [x] Apply authentication middleware.
 
-- [ ] **Reply Routes (`replyRoutes.js`):
-    - [ ] Define all public and protected routes for replies.
-    - [ ] Apply middleware for protected routes.
+- [x] **Reply Routes (`replyRoutes.js`):
+    - [x] Define all public and protected routes for replies.
+    - [x] Apply middleware for protected routes.
 
 ## Main Router Integration (`routes/index.js`)
 

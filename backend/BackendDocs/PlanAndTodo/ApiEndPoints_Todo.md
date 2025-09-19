@@ -63,64 +63,64 @@ This document outlines the todo list for implementing the API endpoints for the 
 
 ## 5. Order Endpoints
 
-- [ ] Implement endpoint to create a new order.
-- [ ] Implement endpoint to get all orders.
-- [ ] Implement endpoint to get order by ID.
-- [ ] Implement endpoint to update order by ID.
-- [ ] Implement endpoint to delete order by ID.
+- [x] Implement endpoint to create a new order.
+- [x] Implement endpoint to get all orders.
+- [x] Implement endpoint to get order by ID.
+- [x] Implement endpoint to update order by ID.
+- [x] Implement endpoint to delete order by ID.
 
 ## 6. Review Endpoints
 
-- [ ] Implement endpoint to create a new review.
-- [ ] Implement endpoint to get all reviews.
-- [ ] Implement endpoint to get review by ID.
-- [ ] Implement endpoint to update review by ID.
-- [ ] Implement endpoint to delete review by ID.
+- [x] Implement endpoint to create a new review.
+- [x] Implement endpoint to get all reviews.
+- [x] Implement endpoint to get review by ID.
+- [x] Implement endpoint to update review by ID.
+- [x] Implement endpoint to delete review by ID.
 
 ## 7. Cart Endpoints
 
-- [ ] Implement endpoint to add a product to the cart.
-- [ ] Implement endpoint to get all carts.
-- [ ] Implement endpoint to get cart by ID.
-- [ ] Implement endpoint to update cart by ID.
-- [ ] Implement endpoint to delete cart by ID.
+- [x] Implement endpoint to add a product to the cart.
+- [x] Implement endpoint to get all carts.
+- [x] Implement endpoint to get cart by ID.
+- [x] Implement endpoint to update cart by ID.
+- [x] Implement endpoint to delete cart by ID.
 
 ## 8. Wishlist Endpoints
 
-- [ ] Implement endpoint to add a product to the wishlist.
-- [ ] Implement endpoint to get all wishlists.
-- [ ] Implement endpoint to get wishlist by ID.
-- [ ] Implement endpoint to update wishlist by ID.
-- [ ] Implement endpoint to delete wishlist by ID.
+- [x] Implement endpoint to add a product to the wishlist.
+- [x] Implement endpoint to get all wishlists.
+- [x] Implement endpoint to get wishlist by ID.
+- [x] Implement endpoint to update wishlist by ID.
+- [x] Implement endpoint to delete wishlist by ID.
 
 ## 9. Category Endpoints
 
-- [ ] Implement endpoint to create a new category.
-- [ ] Implement endpoint to get all categories.
-- [ ] Implement endpoint to get category by ID.
-- [ ] Implement endpoint to update category by ID.
-- [ ] Implement endpoint to delete category by ID.
+- [x] Implement endpoint to create a new category.
+- [x] Implement endpoint to get all categories.
+- [x] Implement endpoint to get category by ID.
+- [x] Implement endpoint to update category by ID.
+- [x] Implement endpoint to delete category by ID.
 
 ## 10. Likes Endpoints
 
-- [ ] Implement endpoint to create a new like.
-- [ ] Implement endpoint to get all likes.
-- [ ] Implement endpoint to get like by ID.
-- [ ] Implement endpoint to update like by ID.
-- [ ] Implement endpoint to delete like by ID.
+- [x] Implement endpoint to create a new like.
+- [x] Implement endpoint to get all likes.
+- [x] Implement endpoint to get like by ID.
+- [x] Implement endpoint to update like by ID.
+- [x] Implement endpoint to delete like by ID.
 
 ## 11. Invoice Endpoints
 
-- [ ] Implement endpoint to create a new invoice.
-- [ ] Implement endpoint to get all invoices.
-- [ ] Implement endpoint to get invoice by ID.
-- [ ] Implement endpoint to update invoice by ID.
-- [ ] Implement endpoint to delete invoice by ID.
+- [x] Implement endpoint to create a new invoice.
+- [x] Implement endpoint to get all invoices.
+- [x] Implement endpoint to get invoice by ID.
+- [x] Implement endpoint to update invoice by ID.
+- [x] Implement endpoint to delete invoice by ID.
 
 ## 12. Reply Endpoints
 
-- [ ] Implement endpoint to create a new reply.
-- [ ] Implement endpoint to get all replies.
-- [ ] Implement endpoint to get reply by ID.
-- [ ] Implement endpoint to update reply by ID.
-- [ ] Implement endpoint to delete reply by ID.
+- [x] Implement endpoint to create a new reply.
+- [x] Implement endpoint to get all replies.
+- [x] Implement endpoint to get reply by ID.
+- [x] Implement endpoint to update reply by ID.
+- [x] Implement endpoint to delete reply by ID.

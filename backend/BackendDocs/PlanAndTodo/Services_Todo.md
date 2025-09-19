@@ -41,30 +41,30 @@ This document outlines the todo list for implementing the service layer for the 
 - [x] **Admin Service (`adminService.js`):
     - [x] Implement all service functions corresponding to the controller actions.
 
-- [ ] **Category Service (`categoryService.js`):
-    - [ ] Implement all service functions corresponding to the controller actions.
+- [x] **Category Service (`categoryService.js`):
+    - [x] Implement all service functions corresponding to the controller actions.
 
 - [x] **Product Service (`productService.js`):
     - [x] Implement all service functions, including logic for handling image uploads.
 
-- [ ] **Order Service (`orderService.js`):
-    - [ ] Implement `createOrderService` with logic for stock validation and reduction.
-    - [ ] Implement other order-related service functions.
+- [x] **Order Service (`orderService.js`):
+    - [x] Implement `createOrderService` with logic for stock validation and reduction.
+    - [x] Implement other order-related service functions.
 
-- [ ] **Review Service (`reviewService.js`):
-    - [ ] Implement all service functions.
+- [x] **Review Service (`reviewService.js`):
+    - [x] Implement all service functions.
 
-- [ ] **Cart Service (`cartService.js`):
-    - [ ] Implement all service functions.
+- [x] **Cart Service (`cartService.js`):
+    - [x] Implement all service functions.
 
-- [ ] **Wishlist Service (`wishlistService.js`):
-    - [ ] Implement all service functions.
+- [x] **Wishlist Service (`wishlistService.js`):
+    - [x] Implement all service functions.
 
-- [ ] **Like Service (`likeService.js`):
-    - [ ] Implement all service functions.
+- [x] **Like Service (`likeService.js`):
+    - [x] Implement all service functions.
 
-- [ ] **Invoice Service (`invoiceService.js`):
-    - [ ] Implement all service functions.
+- [x] **Invoice Service (`invoiceService.js`):
+    - [x] Implement all service functions.
 
-- [ ] **Reply Service (`replyService.js`):
-    - [ ] Implement all service functions.
+- [x] **Reply Service (`replyService.js`):
+    - [x] Implement all service functions.

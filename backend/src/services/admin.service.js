@@ -1,6 +1,6 @@
 import * as adminRepository from '../repositories/admin.repository.js';
 import ApiError from '../utils/ApiErrors.js';
-import { redisClient } from '../config/redis.js';
+import redisClient from '../config/redis.js';
 import sendEmail from '../utils/mail.js';
 
 export const registerAdminService = async (adminData) => {
